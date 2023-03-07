@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Regular'), local('Gotham-Pro-Regular');
+  /* url('GothamPro.woff2') format('woff2'),
+        url('GothamPro.woff') format('woff'),
+        url('GothamPro.ttf') format('truetype'); */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Black';
+  src: url('GothamPro-Black.eot');
+  /* src: url('GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('GothamPro-Black.woff') format('woff'), url('GothamPro-Black.ttf') format('truetype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('GothamPro-Bold.eot');
+  src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype');
+  /* url('GothamPro-Bold.woff') format('woff'), url('GothamPro-Bold.ttf') format('truetype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-btn {
+  display: block;
+  width: 260px;
+  font-size: 18px;
+  font-family: 'Gotham Pro';
+  padding: 10px 20px;
+  margin: 0;
+  border: 2px solid blue;
+  border-radius: 15px;
+  background-color: rgb(158, 216, 236);
+  cursor: pointer;
+}
+
+.open-btn:hover {
+  background-color: rgb(102, 184, 211);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-wrap {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+  max-width: 750px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 449px;
+  box-sizing: border-box;
+}
+
+.modal-window {
+  display: flex;
+  height: inherit;
+  width: inherit;
+}
+
+/* .modal-content::before {
+  position: fixed;
+  z-index: 50;
+  content: '✖';
+  font-size: 30px;
+  color: red;
+  top: 20px;
+  left: 80%;
+  cursor: pointer;
+} */
+
+.picture-area {
+  position: relative;
+  max-width: 286px;
+  padding: 49px 12px;
+  word-wrap: break-word;
+  align-items: center;
+  text-align: end;
+  font-family: 'Gotham Pro Black';
+  background-color: #efefef;
+  line-height: 88px;
+  font-size: 92px;
+  border-radius: 20px 0 0 20px;
+  color: #000000;
+}
+
+.picture-area strong {
+  opacity: 0.05;
+}
+
+.bcg-ellipse {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+}
+
+.bcg-arrow {
+  position: absolute;
+  top: 330px;
+  left: 225px;
+}
+
+.bcg-book {
+  position: absolute;
+  left: -50px;
+  z-index: 9;
+  top: 50px;
+}
+
+.forms-area {
+  padding: 28px 52px 63px 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background-color: unset;
+  font-size: 25px;
+  border: none;
+  color: red;
+  float: right;
+  text-align: end;
+  padding: 0;
+  cursor: pointer;
+  margin-right: -25px;
+  margin-top: -10px;
+}
+
+.main-content {
+  width: 325px;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+.title-1,
+.title-2 {
+  text-transform: uppercase;
+  font-family: 'Gotham Pro Black';
+}
+
+.title-1 {
+  font-size: 24px;
+  line-height: 23px;
+  margin: 0;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.main-content p {
+  font-family: 'Gotham Pro';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  margin: 0;
+}
+
+.main-content:first-child {
+  margin-bottom: 7px;
+}
+
+.title-2 {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.title-description p em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.description,
+.action-text {
+  font-family: 'Gotham Pro';
+  font-size: 12px;
+  line-height: 11px;
+}
+
+.description {
+  margin-top: 15px;
+  margin-bottom: 34px;
+}
+
+.action-text {
+  text-align: left;
+}
+
+.email-input {
+  width: 323px;
+  height: 50px;
+  border: 2px solid #f3ce00;
+  border-radius: 4px;
+  font-family: 'Gotham Pro Bold';
+  font-size: 14px;
+  padding: 18px 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-top: 6px;
+}
+
+input[type='email']::placeholder {
+  font-family: 'Gotham Pro';
+  font-weight: bold;
+  color: #0d0d0d;
+  font-size: 14px;
+}
+
+input[type='email']::-webkit-input-placeholder {
+  font-family: 'Gotham Pro';
+  font-weight: bold;
+  color: #0d0d0d;
+  font-size: 14px;
+}
+
+.download-btn {
+  width: 323px;
+  height: 50px;
+  border: unset;
+  background: linear-gradient(92.64deg, #ff5621 29.24%, #f21313 83.67%);
+  border-radius: 4px;
+  font-family: 'Gotham Pro Black';
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 110%;
+  cursor: pointer;
+}

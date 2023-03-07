@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <button class="open-btn" id="open-btn">
+        <h3>Click here to open a modal window📥</h3>
+      </button>
+      <div id="modal-bcg" class="modal">
+        <div id="modal-wrap" class="modal-wrap">
+          <div class="modal-content">
+            <div class="modal-window">
+              <div class="picture-area">
+                <strong>ПОШАГО-ВЫЙ ПЛАН</strong>
+                <img src="./img/Ellipse.png" alt="ellipse" class="bcg-ellipse" />
+                <img src="./img/arrow.svg" alt="arrow" class="bcg-arrow" />
+                <img src="./img/book.png" alt="book" class="bcg-book" />
+              </div>
+
+              <div class="forms-area">
+                <div class="title-main">
+                  <button id="close-btn" class="close-btn">✖</button>
+                  <h1 class="title-1">мастер-класс?</h1>
+                </div>
+                <div class="main-content">
+                  <p>Скачайте пошаговый план</p>
+                  <div class="title-description">
+                    <h2 class="title-2">
+                      «Как собственнику <br />
+                      выйти из операционки»
+                    </h2>
+                    <p>и познакомьтесь с этим инструментом <em>прямо сейчас</em></p>
+                  </div>
+
+                  <div class="description">10 шагов помогут создать системный бизнес</div>
+                </div>
+
+                <form>
+                  <div class="action-text">Для получения бонуса введите email</div>
+                  <input class="email-input" type="email" placeholder="Ваш e-mail" />
+                  <button id="download-btn" class="download-btn">Скачать пошаговой план</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
